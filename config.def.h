@@ -68,43 +68,33 @@ static char termname[] = "st-256color";
 static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+/* Simple terminal in terminal.sexy */
+/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    // Colors are in this order, 
-    // first all the dark (0 - 7),
-    // then all the light (8 - 15)
-    // @see http://www.xcolors.net/
-    //
-    // black
-    // red
-    // green
-    // yellow
-    // blue
-    // magenta
-    // cyan
-    // white
-    "#222222",
-    "#882222",
-    "#6C7E55",
-    "#CAAF2B",
-    "#425387",
-    "#956D9D",
-    "#7C9AA6",
-    "#909090",
 
-    "#333333",
-    "#aa2222",
-    "#7DB37D",
-    "#BFB556",
-    "#4a5a8d",
-    "#C18FCB",
-    "#8FADBF",
-    "#FFFFFF",
+  /* 8 normal colors */
+  [0] = "#20201d", /* black   */
+  [1] = "#a82b2b", /* red     */
+  [2] = "#437828", /* green   */
+  [3] = "#ae9314", /* yellow  */
+  [4] = "#455998", /* blue    */
+  [5] = "#893f9e", /* magenta */
+  [6] = "#147156", /* cyan    */
+  [7] = "#a6a28c", /* white   */
 
-	[255] = 0,
+  /* 8 bright colors */
+  [8]  = "#7d7a68", /* black   */
+  [9]  = "#ce3535", /* red     */
+  [10] = "#60ac39", /* green   */
+  [11] = "#d4b518", /* yellow  */
+  [12] = "#6684e1", /* blue    */
+  [13] = "#b854d4", /* magenta */
+  [14] = "#1fad83", /* cyan    */
+  [15] = "#fefbec", /* white   */
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#33cc33",
-	"#cc3333",
+  /* special colors */
+  [256] = "#33cc33", /* background */
+  [257] = "#cc3333", /* foreground */
 };
 
 /* bg opacity */
