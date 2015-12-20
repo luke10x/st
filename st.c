@@ -3198,7 +3198,7 @@ xloadcols(void)
 
 	/* set alpha value of bg color */
 	if (USE_ARGB) {
-		dc.col[defaultbg].color.alpha = (0xffff * alpha) / OPAQUE; //0xcccc;
+		dc.col[defaultbg].color.alpha = 0xeeee;
 		dc.col[defaultbg].pixel &= 0x00111111;
 		dc.col[defaultbg].pixel |= alpha << 24; // 0xcc000000;
 	}
