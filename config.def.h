@@ -4,8 +4,13 @@
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * sudo apt install xfonts-terminus
+ * sudo apt install xfonts-terminus-oblique
  */
-static char font[] = "Ubuntu Mono:style=dz:pixelsize=14:antialias=true:autohint=true";
+//static char font[] = "Ubuntu Mono:style=dz:pixelsize=20:antialias=true:autohint=true";
+static char font[] = "Terminus:pixelsize=14:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=false:autohint=false";
+//static char font[] = "DejaVu Sans Mono:size=12:antialias=false:autohint=true";
+
 static int borderpx = 2;
 
 /*
